@@ -23,12 +23,6 @@ spring:
         use_sql_comments: true
         format_sql: true
 
-flyway:
-    enabled: ${FLYWAY_MIGRATION_ENABLED:false}
-    locations: classpath:db/migration
-    clean-disabled: true 
-    baseline-on-migrate: true
-
 logging:
   file:
     name: src/main/resources/script/stage_log.log
